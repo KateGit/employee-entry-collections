@@ -22,102 +22,26 @@ package com.sqa.km.employees;
  * @since 1.0
  *
  */
-public class Employee {
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+public class Employee extends AbstractPerson {
 
-	}
-
-	private String addresses;
-	private String age;
-	private String jobTitle;
-
-	private String name;
-
-	/**
-	 * @param addresses
-	 * @param age
-	 * @param jobTitle
-	 * @param name
-	 */
-	public Employee(String addresses, String age, String jobTitle, String name) {
+	public Employee(String name, String address, int age) {
 		super();
-		this.addresses = addresses;
-		this.age = age;
-		this.jobTitle = jobTitle;
-		this.name = name;
+		this.setName(name);
+		this.setAddress(address);
+		this.setAge(age);
 	}
 
-	/**
-	 * @return the addresses
-	 */
-	public String getAddresses() {
-		return this.addresses;
-	}
-
-	/**
-	 * @return the age
-	 */
-	public String getAge() {
-		return this.age;
-	}
-
-	/**
-	 * @return the jobTitle
-	 */
-	public String getJobTitle() {
-		return this.jobTitle;
-	}
-
-	/**
-	 * @return the name
-	 */
-	public String getName() {
-		return this.name;
-	}
-
-	/**
-	 * @param addresses
-	 *            the addresses to set
-	 */
-	public void setAddresses(String addresses) {
-		this.addresses = addresses;
-	}
-
-	/**
-	 * @param age
-	 *            the age to set
-	 */
-	public void setAge(String age) {
-		this.age = age;
-	}
-
-	/**
-	 * @param jobTitle
-	 *            the jobTitle to set
-	 */
-	public void setJobTitle(String jobTitle) {
-		this.jobTitle = jobTitle;
-	}
-
-	/**
-	 * @param name
-	 *            the name to set
-	 */
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	/**
-	 * @see java.lang.Object#toString()
-	 */
 	@Override
 	public String toString() {
-		return "Employee [addresses=" + this.addresses + ", age=" + this.age
-				+ ", jobTitle=" + this.jobTitle + ", name=" + this.name + "]";
+		return super.toString() + " They also work for a living.";
+	}
+
+	/**
+	 * @param address
+	 */
+	private void setAddress(String address) {
+		// TODO Auto-generated method stub
+
 	}
 
 }
